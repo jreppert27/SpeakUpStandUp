@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Thank You - Anonymous Question Platform{% endblock %}
+
+{% block content %}
+<h1>Thank You for Submitting Your Question!</h1>
+<p>Your question has been received.</p>
+<button onclick="window.location.href='{{ url_for('submit_question') }}'">Submit Another Question</button>
+</body>
+{% endblock %}
